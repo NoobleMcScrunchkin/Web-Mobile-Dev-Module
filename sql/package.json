@@ -1,0 +1,36 @@
+{
+  "name": "web-dev-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG='' & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "chalk": "^4.1.2",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
+    "pug": "^3.0.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules/",
+      "*.pug",
+      "static/*"
+    ],
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000
+    }
+  }
+}
