@@ -26,6 +26,9 @@ app.use('/', mainRouter);
 const apiRouter = require('./routes/apiRoutes');
 app.use('/api', apiRouter);
 
+const adminRouter = require('./routes/adminRoutes');
+app.use('/admin', adminRouter);
+
 app.use((req, res) => {
     res.statusCode = 404;
     res.send("<html><body><h1>404 Not Found</h1></body></html>");

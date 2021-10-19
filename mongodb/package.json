@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG='' & nodemon app.js",
-    "debug": "set DEBUG=* & nodemon app.js"
+    "test": "set DEBUG=* & nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +16,7 @@
     "debug": "^4.3.2",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
+    "mongodb": "^4.1.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.13",
     "pug": "^3.0.2"
