@@ -26,4 +26,4 @@ main.get('/', async (req, res) => {
 
 main.use('/books', bookRouter);
 
-module.exports = main
+module.exports = main;
